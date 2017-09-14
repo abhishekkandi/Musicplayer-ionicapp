@@ -35,11 +35,35 @@
   <body ng-app="starter">
 
     <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
-      </ion-header-bar>
-      <ion-content>
+      <div class="bar bar-header bar-dark">
+         <h1 class="title">Music Player</h1>
+      </div>
+      <ion-content class="has-header">
+          <div class="list card">
+              
+                <div class="item item-avatar">
+                  <img src="feels.jpg">
+                  <h2>Feels</h2>
+                  <p>Calvin Harris</p>
+                </div>
+              
+                <div class="item item-image">
+                  <img src="feels.jpg">
+                </div>
+              
+                <!--<a class="item item-icon-left assertive" href="http://musicpleer.audio/#!c3f01f41d932e4bc2e4a41e887e98460">
+                  <i class="icon ion-music-note"></i>
+                  Start listening
+                </a>-->
+                <audio controls autoplay="off">
+                  <source src="feels.mp3">
+                </audio>
+              
+              </div>
       </ion-content>
+      <div class="bar bar-footer bar-dark">
+        <h1 class="title">ABS Creation</h1>
+     </div>
     </ion-pane>
   </body>
 </html>
